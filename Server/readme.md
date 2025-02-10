@@ -1,22 +1,24 @@
-API link: https://goa-api.onrender.com/
+# Goa API  
 
-queries:
+**Base URL:** [`https://goa-api.onrender.com/`](https://goa-api.onrender.com/)  
 
-sort - values are "asc" or "ASC", "desc" or "DESC"
-limit - value is number
+## Query Parameters  
 
+- **`sort`** - Sorts the results.  
+  - Accepted values: `"asc"`, `"ASC"`, `"desc"`, `"DESC"`  
+- **`limit`** - Limits the number of results returned.  
+  - Accepted value: Any positive number  
 
+## Endpoints  
 
-mentors route:
+### Mentors  
 
-mentors/ - get all mentors
-mentors/:id - get single mentor
+- **`GET /mentors`** - Retrieve all mentors  
+- **`GET /mentors/:id`** - Retrieve a single mentor by ID  
 
+### Leaders  
 
-
-leaders route:
-
-leaders/ - get all leaders
-leaders/salary - get leader with his/her salary
-leaders/members - get leader with his/her squad member count
-leaders/:id - get single leader
+- **`GET /leaders`** - Retrieve all leaders  
+- **`GET /leaders/salary`** - Retrieve leaders along with their salaries  
+- **`GET /leaders/members`** - Retrieve leaders with their squad member count  
+- **`GET /leaders/:id`** - Retrieve a single leader by ID  
