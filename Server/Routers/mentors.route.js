@@ -22,10 +22,10 @@ MentorsRoute.get("/", async (req, res) => {
         if (sort) {
             switch (sort.toLowerCase()) {
                 case "asc":
-                    mentors.sort((a, b) => a.mentor.localeCompare(b.mentor));
+                    mentors.sort((a, b) => a["speed count"] - b["speed count"]);
                     break;
                 case "desc":
-                    mentors.sort((a, b) => b.mentor.localeCompare(a.mentor));
+                    mentors.sort((a, b) => b["speed count"] - a["speed count"]);
                     break;
             }
         }
@@ -36,6 +36,38 @@ MentorsRoute.get("/", async (req, res) => {
         return res.status(500).send("Database could not be read");
     }
 });
+
+MentorsRoute.get("/speed_count", async (req, res) => {
+    const {limit, sort} = req.query;
+
+    try {
+        let all = await readFile(filePath);
+        let mentors = all.map(mentor => ({"Mentor": mentor.mentor, "speed count": mentor["speed count"]}));
+
+        // limit query
+        if (limit) {
+            mentors = mentors.slice(0, parseInt(limit));
+        }
+
+        // sort query
+        if (sort) {
+            switch (sort.toLowerCase()) {
+                case "asc":
+                    mentors.sort((a, b) => a["speed count"] - b["speed count"]);
+                    break;
+                case "desc":
+                    mentors.sort((a, b) => b["speed count"] - a["speed count"]);
+                    break;
+            }
+        }
+        
+        res.json(mentors);
+
+    } catch (e) {
+        console.error("Error reading database:", e);
+        return res.status(500).send("Database could not be read");
+    }
+})
 
 MentorsRoute.get("/:id", async (req, res) => {
     const id = req.params.id;

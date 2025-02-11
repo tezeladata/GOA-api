@@ -7,6 +7,7 @@ const App = () => {
                 <h1 className="text-6xl font-black max-[550px]:text-4xl">Mentors</h1>
                 <FetchExample title="Get all mentors" url="https://goa-api.onrender.com/mentors" />
                 <FetchExample title="Get a single mentor" url="https://goa-api.onrender.com/mentors/Data Tezelashvili" />
+                <FetchExample title="Get a speed counts" url="https://goa-api.onrender.com/mentors/speed_count" />
                 <FetchExample title="Limit results" url="https://goa-api.onrender.com/mentors?limit=5" />
                 <FetchExample title="Sort results" url="https://goa-api.onrender.com/mentors?sort=asc" />
             </div>

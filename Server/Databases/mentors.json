@@ -1,66 +1,82 @@
 [
   {
     "mentor": "Luka Tskhvaradze",
-    "Group": "0, 11, 58, 66"
+    "Group": "0, 11, 58, 66",
+    "speed count": 11
   },
   {
     "mentor": "Lasha Lomidze",
-    "Group": "14&15&16, 34, 27, 65"
+    "Group": "14&15&16, 34, 27, 65",
+    "speed count": 9
   },
   {
     "mentor": "Gabriel Molodini",
-    "Group": "4, 7, 19&20, 40, 50, 57"
+    "Group": "4, 7, 19&20, 40, 50, 57",
+    "speed count": 11
   },
   {
     "mentor": "Davit Janezashvili",
-    "Group": "24&25, 17&18&30&31&32, 41, 55"
+    "Group": "24&25, 17&18&30&31&32, 41, 55",
+    "speed count": 8
   },
   {
     "mentor": "Data Diasamidze",
-    "Group": "26, 33, 49"
+    "Group": "26, 33, 49",
+    "speed count": 6
   },
   {
     "mentor": "Data Tezelashvili",
-    "Group": "29, 54, 56"
+    "Group": "29, 54, 56",
+    "speed count": 5
   },
   {
     "mentor": "David Grdzelishvili",
-    "Group": "5, 6, 38, 47, 48"
+    "Group": "5, 6, 38, 47, 48",
+    "speed count": 9
   },
   {
     "mentor": "Sandro Zabakhidze",
-    "Group": "39, 37"
+    "Group": "39, 37",
+    "speed count": 3
   },
   {
     "mentor": "Mate Giorgelashvili",
-    "Group": "36, 52"
+    "Group": "36, 52",
+    "speed count": 2
   },
   {
     "mentor": "Vano Motiashvili",
-    "Group": "44, 45, 46, 51"
+    "Group": "44, 45, 46, 51",
+    "speed count": 7
   },
   {
     "mentor": "Zuka Abashidze",
-    "Group": "53"
+    "Group": "53",
+    "speed count": 1
   },
   {
     "mentor": "Guram Vakhtangashvili",
-    "Group": "42, 59, 62"
+    "Group": "42, 59, 62",
+    "speed count": 4
   },
   {
     "mentor": "Luka Gurgenidze",
-    "Group": "43, 64"
+    "Group": "43, 64",
+    "speed count": 3
   },
   {
     "mentor": "Guram Papunashvili",
-    "Group": "60"
+    "Group": "60",
+    "speed count": 1
   },
   {
     "mentor": "Giorgi Khmaladze",
-    "Group": "61"
+    "Group": "61",
+    "speed count": 1
   },
   {
     "mentor": "Nika Kvaratskhelia",
-    "Group": "63"
+    "Group": "63",
+    "speed count": 2
   }
 ]
